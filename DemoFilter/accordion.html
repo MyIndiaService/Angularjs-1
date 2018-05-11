@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="mainApp">
+  <head>
+    <script src="js/angular128.js"></script>
+    <script src="js/ui-bootstrap-tpls-0-10-0.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/example.js"></script>
+      <script src="js/myfilter.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/grid.css" rel="stylesheet">
+	
+  </head>
+  <body class="container">
+      <div ng-controller="userController">
+        <h1 class="text-primary text-center">Custome Filter in Angular App1</h1>
+         Enter the Number of Charcter ot Search Name: <input type="text" ng-model="limit" />
+          <table class="table table-bordered">
+            <tr class="bg-success">
+                <th><a href="#">ID</a></th>
+                <th><a href="#">Name</a></th>
+                <th><a href="#">Gender</a></th>
+                <th><a href="#">City</a></th>
+            </tr>
+             <!--  <tr ng-repeat="user in users">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name| myFilter2:limit}}</td>
+                    <td>{{user.Gender}}</td>
+                    <td>{{user.City}}</td>
+                </tr> -->
+               <tr ng-repeat="user in users | idFilter1:limit">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.Gender}}</td>
+                    <td>{{user.City}}</td>
+                </tr> 
+          </table>
+      </div>
+      
+    </body>
+</html>

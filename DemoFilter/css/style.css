@@ -1,0 +1,37 @@
+/*.main_cont{ margin:20px;}
+/*.left_side{width: 15%; float: left; margin-right:2%;}*/
+.menu-list ul, .menu-list ul li{ padding:0; margin:0; list-style:none;}
+.menu-list ul li{ margin-bottom: 1px; background-color: #e4e4e4; padding:20px;}
+.item--coutn{ width:30px; height:30px; background-color:#fff; border-radius:50%; color:#333; display:inline-block; float:right; text-align:center; line-height:2; }
+.all-item{background-color: #ccc; padding:20px;}
+.search_cont{background-color: #ccc; padding:10px;}
+.search_cont input{background-color: #fff; padding:10px; border-radius: 4px; border:none; width: 100%;}
+.section_1, .section_2{ margin-bottom: 5px;}
+.menu-list h3{ background-color: #e4e4e4; padding:20px; margin: 0; border-bottom: 1px solid #fff;}
+/*.right_side{ width: 83%; float: left;}*/
+
+
+
+/*====== services section css start here ======*/
+.services_cont, .services_cont h2{ padding-top:0; margin-top:0;}
+.services_cont, .services_cont h2, .services_cont p{ color:#fff;}
+.services_cont .after_sale_services h2, .services_cont .after_sale_services p, .services_cont .workshop h2, .services_cont .workshop p, .services_cont .plant_hire h2, .services_cont .plant_hire p{ color:#000000;}
+.services_cont .big{ font-size:36px;}
+.services_cont .services_cont--list{ margin-bottom:20px; padding:15px;}
+.services_cont .services_cont--list.plant_hire{ margin-bottom:0;}
+.services_cont--list{}
+.services_cont button.btn,  .services_cont a.btn{ text-transform:uppercase; padding:8px 15px; border: none; font-size: 16px; font-weight: 600; line-height: 1.5; color: #fff}
+.btn--bgorange{ background-color:#f76d2c;}
+.btn--bgorange:hover{ background-color:#f7921c;}
+.btn--bgdark{background-color:#212121;}
+.btn--bgdark:hover{background-color:#464444;}
+
+.services_cont .sales, .services_cont .after_sale_services, .services_cont .workshop, .services_cont .trailer, .services_cont .spare_parts, .services_cont .plant_hire{ background-size:100% 100%; background-repeat:no-repeat; }
+.services_cont .one_half-sm{ padding-left:0; padding-right:0;}
+
+.services_cont .sales{ background-image:url(images/sales-bg.png);}
+.services_cont .after_sale_services{background-image:url(images/after-sale-services-bg.png);}
+.services_cont .workshop{background-image:url(images/workshop_bg.png);}
+.services_cont .trailer{background-image:url(images/trailer_bg.png);}
+.services_cont .spare_parts{background-image:url(images/spare-parts_bg.png);}
+.services_cont .plant_hire{background-image:url(images/plant-hire_bg.png);}
