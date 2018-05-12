@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="mainApp">
+  <head>
+    <script src="js/angular128.js"></script>
+    <script src="js/ui-bootstrap-tpls-0-10-0.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/example.js"></script>
+      <script src="js/myfilter.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/grid.css" rel="stylesheet">
+	
+  </head>
+  <body class="container">
+      <div ng-controller="userController">
+        <h1 class="text-primary text-center">Custome Filter orderby and ng-click directive in Angular App1</h1>
+          <table class="table table-bordered">
+            <tr class="bg-success">
+                <th><a href="#" ng-click="order='id'">ID</a></th>
+                <th><a href="#" ng-click="order='Technology'">Techonology</a></th>
+                <th><a href="#" ng-click="order='Likes'">Like</a></th>
+                <th><a href="#" ng-click="order='Dislikes'">Dislike</a></th>
+                <th><a href="#">Like/Dislike</a></th>
+            </tr>
+           <tr ng-repeat="techno in Technologys | orderBy:order">
+                <td>{{techno.id}}</td>
+                <td>{{techno.Technology}}</td>
+                <td>{{techno.Likes}}</td>
+                <td>{{techno.Dislikes}}</td>
+                <td>
+                        <input type="button" value="Like" ng-click="incrementLike(techno)"/>
+                        <input type="button" value="Dislike" ng-click="incrementDilike(techno)"/>
+                </td>
+            </tr> 
+          </table>
+      </div>
+      
+    </body>
+</html>
