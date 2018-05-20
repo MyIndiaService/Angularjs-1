@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
   <head>
     <script src="js/angular128.js"></script>
     <script src="js/ui-bootstrap-tpls-0-10-0.js"></script>
@@ -8,7 +9,7 @@
 	<script src="js/filterJs.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/grid.css" rel="stylesheet">
-	
+	<meta charset="utf-8"/>
   </head>
   <body ng-app="myApp">
 	<div class="main_cont" ng-controller="myCtrl">
@@ -24,7 +25,7 @@
 			
 			<h3>Colleges With Checkbox</h3>
 			<ul>
-				<li ng-repeat="collegecheck in collegechecklist" ng-click="displayProd(collegecheck.type)"> <input type="checkbox"> <span class="item--title">{{collegecheck.colName}}</span> <span class="item--coutn">{{getCollCount(collegecheck.type)}}</span></li>
+				<li ng-repeat="collegecheck in collegechecklist"> <input type="checkbox" ng-model="collegecheck.status"> <span class="item--title">{{collegecheck.colName}}</span> <span class="item--coutn">{{getCollCount(collegecheck.type)}}</span></li>
 			</ul>
 			 
 		</div>
@@ -34,20 +35,15 @@
 		<header class="header-top">
 		
 	<!-- Error  is Here   solved  --------------------------------->	
-		<select ng-options="years.yearList for years in collegeListYear" ng-model="selectedValue"  ng-change="displayProYearwise()">	
+		<select ng-options="value as value.yearList for value in collegeListYear" ng-model="Selectyear" ng-change="getTotalList(Selectyear.yearList);">
+            
 		</select>
-	<!-- Error is here End                 -------------------->
-	
+	<!-- Error is here End        -------------------->
 		
-<!-- Demo is Here But it take fixed value not on change -->	
-	<select ng-options="item.title for item in fieldTable" ng-model="selected" ng-change="hasChanged()">
-	</select>
-	
-<!-- Demo is Here But it take fixed value not on change -->		
 		
 		</header>
 		<div class="content_cont">
-			<ul ng-repeat="x in college | idFilter1:DisplayProList | filter:searchitem | yearsFilter:selectedValue">			
+			<ul ng-repeat="x in college | filterAll:DisplayProList:Selectyear:collegechecklist:this | filter:searchitem">			
 				<li><h1> {{x.name}}</h1></li>
 				<li> {{x.title}}</li>
 				<li> {{x.adds}}</li>

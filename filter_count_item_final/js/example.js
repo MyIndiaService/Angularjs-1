@@ -24,9 +24,9 @@ app.controller('myCtrl', function($scope){
 	//checkbox left side nav name
 	$scope.collegechecklist = [
 	
-		{"colName":"college Checkbox 1", "type":"checkbox1"},
-		{"colName":"college Checkbox 2", "type":"checkbox2"},
-		{"colName":"college Checkbox 3", "type":"checkbox3"}
+		{"colName":"college Checkbox 1", "type":"checkbox1",status:false},
+		{"colName":"college Checkbox 2", "type":"checkbox2",status:false},
+		{"colName":"college Checkbox 3", "type":"checkbox3",status:false}
 	
 	];
 	
@@ -37,6 +37,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college1",
+        "chktype":"checkbox1",
 		"year":"2016"
 		
 	}
@@ -47,6 +48,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college1",
+        "chktype":"checkbox1",
 		"year":"2016"
 		
 	},
@@ -56,6 +58,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college1",
+        "chktype":"checkbox1",
 		"year":"2016"
 	},	
 	{
@@ -64,6 +67,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college2",
+        "chktype":"checkbox2",
 		"year":"2017"
 		
 	},
@@ -73,6 +77,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college2",
+        "chktype":"checkbox2",
 		"year":"2017"
 		
 	},
@@ -83,6 +88,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college3",
+        "chktype":"checkbox3",
 		"year":"2018"
 		
 	},
@@ -93,6 +99,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college3",
+        "chktype":"checkbox3",
 		"year":"2018"
 		
 	},
@@ -102,6 +109,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college3",
+        "chktype":"checkbox3",
 		"year":"2016"
 		
 	},
@@ -110,6 +118,7 @@ app.controller('myCtrl', function($scope){
 		"title":"best school",
 		"adds":"Fkj54524",
 		"cont":"564564564",
+        "chktype":"checkbox3",
 		"type":"college3",
 		"year":"2017"
 	},
@@ -119,6 +128,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college4",
+        "chktype":"checkbox4",
 		"year":"2018"
 		
 	},
@@ -128,6 +138,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college4",
+        "chktype":"checkbox4",
 		"year":"2019"
 		
 	},
@@ -137,6 +148,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college4",
+        "chktype":"checkbox4",
 		"year":"2017"
 		
 	},
@@ -146,6 +158,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college4",
+        "chktype":"checkbox4",
 		"year":"2018"
 		
 	},
@@ -155,6 +168,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college4",
+        "chktype":"checkbox4",
 		"year":"2019"
 		
 	},
@@ -164,6 +178,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college4",
+        "chktype":"checkbox4",
 		"year":"2017"
 	},
 	{
@@ -172,6 +187,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college5",
+        "chktype":"checkbox5",
 		"year":"2018"
 	},
 	{
@@ -180,6 +196,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox1",
+        "chktype":"checkbox1",
 		"year":"2016"
 	},
 	{
@@ -188,6 +205,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox1",
+        "chktype":"checkbox1",
 		"year":"2017"
 	},
 	{
@@ -196,6 +214,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox2",
+        "chktype":"checkbox2",
 		"year":"2019"
 	},
 	{
@@ -204,6 +223,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox2",
+        "chktype":"checkbox2",
 		"year":"2018"
 	},
 	{
@@ -211,6 +231,7 @@ app.controller('myCtrl', function($scope){
 		"title":"best school",
 		"adds":"Fkj54524",
 		"cont":"564564564",
+        "chktype":"checkbox2",
 		"type":"checkbox2",
 		"year":"2019"
 	},
@@ -220,6 +241,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox2",
+        "chktype":"checkbox2",
 		"year":"2017"
 	},
 	{
@@ -228,6 +250,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox3",
+        "chktype":"checkbox3",
 		"year":"2016"
 	},
 	{
@@ -236,6 +259,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox3",
+        "chktype":"checkbox3",
 		"year":"2016"
 	},
 	{
@@ -244,14 +268,17 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"checkbox3",
+        "chktype":"checkbox3",
 		"year":"2016"
 	}];
 	
 	$scope.allitem = $scope.college.length;
-	
-	$scope.DisplayProList="";
-	$scope.ProYearList="";
-	
+    
+	   //display product with year wise
+	$scope.Selectyear=$scope.collegeListYear[0];
+    
+    $scope.DisplayProList="";
+    
 	//count college item
 	$scope.getCollCount=function(type){
         var count=0;
@@ -277,6 +304,9 @@ $scope.getCollCountCheck=function(type){
         return count;
     }
 // display on click college list then display related item
+
+
+    
 	$scope.displayProd=function(type){
 
 		if(type=="all")
@@ -289,38 +319,7 @@ $scope.getCollCountCheck=function(type){
 		}	
     }
 	
-	//display product with year wise
-	$scope.selectedValue=$scope.collegeListYear[0].yearList;
-
-	$scope.displayProYearwise = function(){
-		alert($scope.selectedValue.yearList);
-		
-		$scope.selectedValue=$scope.selectedValue.yearList;
-		
-    }
-	
-	
-	$scope.fieldTable = [{
-    field: "text",
-    title: "Global"
-  }, {
-    field: "relatedentity",
-    title: "Entity"
-  }, {
-    field: "title",
-    title: "Title"
-  }, {
-    field: "content",
-    title: "Content"
-  }];
-
-   $scope.selected = $scope.fieldTable[0];
-
-  $scope.hasChanged = function() {
-alert($scope.selected.field);
-  }
-
-	
+    
 
 });
 
