@@ -48,7 +48,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college1",
-        "chktype":"checkbox1",
+        "chktype":"checkbox3",
 		"year":"2016"
 		
 	},
@@ -58,7 +58,7 @@ app.controller('myCtrl', function($scope){
 		"adds":"Fkj54524",
 		"cont":"564564564",
 		"type":"college1",
-        "chktype":"checkbox1",
+        "chktype":"checkbox2",
 		"year":"2016"
 	},	
 	{
