@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+  <head>
+    <script src="js/angular128.js"></script>
+    <script src="js/ui-bootstrap-tpls-0-10-0.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/example.js"></script>
+	<script src="js/filterJs.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/grid.css" rel="stylesheet">
+	<meta charset="utf-8"/>
+  </head>
+  <body ng-app="myApp">
+	<div class="main_cont" ng-controller="myCtrl">
+	
+	<div class="left_side one_third-sm">
+		<div class="search_cont"> <input type="text" ng-model="searchitem"></div>
+		<div class="all-item" ng-click="displayProd('all')"><span class="item--title">All</span> <span class="item--coutn">{{allitem}}</span></div>
+		<div class="section_1 menu-list">
+			<h3>colleges</h3>			
+			<ul>
+				<li ng-repeat="collegeName in collegeName" ng-click="displayProd(collegeName.type)"> <span class="item--title">{{collegeName.colName}}</span> <span class="item--coutn">{{getCollCount(collegeName.type)}}</span></li>
+			</ul>
+			<div ng-show="showFilter" class="clear_filter" ng-click="clearFilter();"><h3> X Clear Filter</h3></div>
+			<h3>Colleges With Checkbox</h3>
+			<ul>
+				<li ng-repeat="collegecheck in collegechecklist"> <input type="checkbox" ng-model="collegecheck.status"> <span class="item--title">{{collegecheck.colName}}</span> <span class="item--coutn">{{getCollCount(collegecheck.type)}}</span></li>
+			</ul>
+			 
+		</div>
+		
+	</div>
+	<div class="right_side two_thirds-md">
+		<header class="header-top">
+		
+	<!-- Error  is Here   solved  --------------------------------->	
+		<select ng-options="value as value.yearList for value in collegeListYear" ng-model="Selectyear" ng-change="getTotalList(Selectyear.yearList);">
+            
+		</select>
+	<!-- Error is here End        -------------------->
+		<div class="dateFilter">
+			<a class="title_fil" ng-click=""> Title Filter </a>
+			<a class="date_fil" ng-click=""> Date Filter </a>
+		</div>
+		
+		</header>
+		<div class="content_cont">
+			<ul ng-repeat="x in college | filterAll:DisplayProList:Selectyear:collegechecklist:this | filter:searchitem">			
+				<li><h1> {{x.name}}</h1></li>
+				<li> {{x.title}}</li>
+				<li> {{x.adds}}</li>
+				<li>{{x.type}}</li>
+				<li> {{x.cont}}</li>
+				<li> {{x.year}}</li>
+			</ul>
+			
+		</div>
+		
+	</div>
+	
+	</div>
+  </body>
+</html>

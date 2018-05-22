@@ -1,0 +1,15 @@
+/*.main_cont{ margin:20px;}
+/*.left_side{width: 15%; float: left; margin-right:2%;}*/
+.menu-list ul, .menu-list ul li{ padding:0; margin:0; list-style:none;}
+.menu-list ul li{ margin-bottom: 1px; background-color: #e4e4e4; padding:20px;}
+.item--coutn{ width:30px; height:30px; background-color:#fff; border-radius:50%; color:#333; display:inline-block; float:right; text-align:center; line-height:2; }
+.all-item{background-color: #ccc; padding:20px;}
+.search_cont{background-color: #ccc; padding:10px;}
+.search_cont input{background-color: #fff; padding:10px; border-radius: 4px; border:none; width: 100%;}
+.section_1, .section_2{ margin-bottom: 5px;}
+.menu-list h3{ background-color: #e4e4e4; padding:20px; margin: 0; border-bottom: 1px solid #fff;}
+/*.right_side{ width: 83%; float: left;}*/
+
+.dateFilter{ background-color:#ccc; padding:5px 15px; overflow:hidden; margin-top:20px;}
+.dateFilter .title_fil{ float:left; cursor:pointer;}
+.dateFilter .date_fil{ float:right; cursor:pointer;}
