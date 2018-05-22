@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="example.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="datCtrl">
+
+<a ng-click="DateFil">Date Filter</a>
+
+<p>Date = {{ today | date : "MM.dd" }}</p>
+<ul ng-repeat="x in dateFilter">
+<li>{{x.name}}</li>
+<li>{{x.title}}</li>
+<li>{{x.postDate | date:""}}</li>
+</ul>
+
+</div>
+
+<script>
+
+</script>
+
+
+</body>
+</html>
