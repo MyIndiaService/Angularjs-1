@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Demo Select Default value</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script>
+			angular.module('ngrepeatSelect', [])
+			.controller('ExampleController', ['$scope', function ($scope) {
+			$scope.data = [{id: '-1',name: '--Seect--'},
+							{id: '1',name: 'Option A'},
+							{id: '2',name: 'Option B'},
+							{id: '3',name: 'Option C'}];
+				}]);
+		</script>
+	</head>
+	<body>
+		<div ng-app="ngrepeatSelect">
+			<div ng-controller="ExampleController">
+				<form name="myForm">
+					<label for="repeatSelect">Angular select:</label>
+					<select name="NameRepeatSelect" id="IdRepeatSelect" 
+					   ng-model="repeatSelect"
+					   ng-init=" repeatSelect = data[0].id"  
+					   ng-options="option.id as option.name for option in data">          
+					</select>
+				</form>
+				<br/> <tt>Selected value: {{repeatSelect}}</tt>
+
+			</div>
+		</div>
+		<br/>
+	</body>
+</html>
